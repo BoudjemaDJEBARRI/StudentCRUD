@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "djeb-scool": {
+      "hosting": {
+        "Stud-CRUD": [
+          "djeb-scool"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "djeb-scool"
+  }
+}

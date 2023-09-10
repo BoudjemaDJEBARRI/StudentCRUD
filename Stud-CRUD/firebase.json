@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "Stud-CRUD",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}
