@@ -24,7 +24,9 @@ export class DashboardComponent implements OnInit {
   email: string = '';
   mobile: string = '';
 
-  constructor(private auth: AuthService, private data: DataService) { }
+  constructor(
+    private auth: AuthService, private data: DataService
+    ) { }
 
   ngOnInit(): void {
     this.getAllStudents();

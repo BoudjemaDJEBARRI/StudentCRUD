@@ -16,26 +16,26 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  login() {
+    login() {
 
-    if(this.email == '') {
-      alert('Please enter email');
-      return;
+      if(this.email == '') {
+        alert('Please enter email');
+        return;
+      }
+
+      if(this.password == '') {
+        alert('Please enter password');
+        return;
+      }
+
+      this.auth.login(this.email,this.password);
+      
+      this.email = '';
+      this.password = '';
+
     }
 
-    if(this.password == '') {
-      alert('Please enter password');
-      return;
+    signInWithGoogle() {
+      this.auth.googleSignIn();
     }
-
-    this.auth.login(this.email,this.password);
-    
-    this.email = '';
-    this.password = '';
-
-  }
-
-  signInWithGoogle() {
-    this.auth.googleSignIn();
-  }
 }
