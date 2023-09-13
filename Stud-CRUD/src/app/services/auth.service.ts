@@ -70,10 +70,8 @@ export class AuthService {
   //sign in with google
   googleSignIn() {
     return this.fireauth.signInWithPopup(new GoogleAuthProvider).then(res => {
-
       this.router.navigate(['/dashboard']);
       localStorage.setItem('token',JSON.stringify(res.user?.uid));
-
     }, err => {
       alert(err.message);
     })

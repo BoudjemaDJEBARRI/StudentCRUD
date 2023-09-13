@@ -37,15 +37,12 @@ export class DashboardComponent implements OnInit {
   // }
 
   getAllStudents() {
-
     this.data.getAllStudents().subscribe(res => {
-
       this.studentsList = res.map((e: any) => {
         const data = e.payload.doc.data();
         data.id = e.payload.doc.id;
         return data;
       })
-
     }, err => {
       alert('Error while fetching student data');
     })

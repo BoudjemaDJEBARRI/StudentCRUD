@@ -1,0 +1,11 @@
+/* Appliquer des styles au pied de page */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #676262; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    padding: 2px; /* Ajoutez un espacement autour du contenu */
+    font-size: 14px; /* Taille de la police */
+}

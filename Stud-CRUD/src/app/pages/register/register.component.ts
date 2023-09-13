@@ -32,6 +32,8 @@ export class RegisterComponent {
     
     this.email = '';
     this.password = '';
-
+  }
+  signInWithGoogle() {
+    this.auth.googleSignIn();
   }
 }

@@ -22,6 +22,11 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';// Ajouter si l'auth ne fonctionne pas
 
 import { AngularFireModule } from '@angular/fire/compat';
+import { FileuploadComponent } from './pages/fileupload/fileupload.component';
+import { FooterComponent } from './layouts/footer/footer.component';
+import { MenuComponent } from './layouts/menu/menu.component';
+import { HomeComponent } from './pages/home/home.component';
+import { FileListComponent } from './pages/file-list/file-list.component';
 
 
 @NgModule({
@@ -32,7 +37,12 @@ import { AngularFireModule } from '@angular/fire/compat';
     DashboardComponent,
     VerifyEmailComponent,
     ForgotPasswordComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    FileuploadComponent,
+    FooterComponent,
+    MenuComponent,
+    HomeComponent,
+    FileListComponent
   ],
   imports: [
     FormsModule,
